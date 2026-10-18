@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dennis Grassi, DG Design</title>
+<meta name="description" content="Dennis Grassi, interior designer e 3D artist. Spazi raccontati attraverso materia, luce e atmosfera: render, prodotti, scenografie e tavole tecniche.">
+<meta name="theme-color" content="#2a1c13">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="bar" id="top">
+  <a class="logo" href="#top" aria-label="DG Design, Dennis Grassi">
+    <svg viewBox="0 0 118 64" width="64" height="35" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linejoin="miter" aria-hidden="true">
+      <path d="M8 6H30C48 6 62 17 62 32C62 47 48 58 30 58H8Z"/>
+      <path d="M105.3 17.1A26 26 0 1 0 109.6 36.5H90"/>
+    </svg>
+    <span class="logo-word">Design</span>
+  </a>
+  <nav class="bar-nav" id="nav" aria-label="Principale">
+    <a href="#progetti" data-i18n="nav.work">Progetti</a>
+    <a href="#servizi" data-i18n="nav.services">Servizi</a>
+    <a href="#chi-sono" data-i18n="nav.about">Chi sono</a>
+    <a href="#contatti" data-i18n="nav.contact">Contatti</a>
+  </nav>
+  <div class="bar-end">
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button class="lang-btn is-on" data-lang="it" aria-pressed="true">IT</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav" data-i18n="nav.menu">Menu</button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-media">
+    <video id="hero-video" src="assets/video/hero.mp4" poster="assets/video/hero.jpg" autoplay muted loop playsinline preload="auto" aria-label="Reel: render di un soggiorno in rovere, lino e luce naturale"></video>
+  </div>
+  <h1 class="hero-name"><span>Dennis</span> <span>Grassi</span></h1>
+  <p class="hero-lead" data-i18n="hero.lead">Interior designer e 3D artist. Racconto gli spazi attraverso materia, luce e atmosfera.</p>
+  <div class="hero-actions">
+    <a class="btn btn-orange" href="#progetti" data-i18n="hero.cta">Guarda i progetti</a>
+    <button class="btn btn-ghost" id="hero-pause" aria-pressed="false" data-i18n="hero.pause">Pausa video</button>
+  </div>
+</section>
+
+<!-- DICHIARAZIONE + REEL -->
+<section class="band band-travertine intro">
+  <p class="intro-text reveal" data-i18n="intro.text">Ogni progetto parte da un'idea di spazio e arriva a un'immagine che si può già abitare: modello, materiali, luce, atmosfera.</p>
+  <div class="reel">
+    <figure class="reveal">
+      <video src="assets/video/camera.mp4" poster="assets/video/camera.jpg" muted loop playsinline preload="metadata" data-inview aria-label="Render di una camera con tende e carta da parati"></video>
+      <figcaption data-i18n="reel.a">Camera, luce del mattino</figcaption>
+    </figure>
+    <figure class="reveal">
+      <video src="assets/video/cucina.mp4" poster="assets/video/cucina.jpg" muted loop playsinline preload="metadata" data-inview aria-label="Render di una cucina in legno con isola in pietra"></video>
+      <figcaption data-i18n="reel.b">Cucina, isola in pietra e legno</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PROGETTI -->
+<section class="band band-lime works" id="progetti">
+  <h2 class="section-title reveal" data-i18n="work.title">Progetti</h2>
+  <div class="tabs reveal" role="tablist" aria-label="Categorie">
+    <button class="tab is-on" role="tab" aria-selected="true" aria-controls="panel-interni" id="tab-interni" data-panel="interni" data-i18n="tab.interni">Interni</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-prodotti" id="tab-prodotti" data-panel="prodotti" data-i18n="tab.prodotti">Prodotti e arredi</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-scene" id="tab-scene" data-panel="scene" data-i18n="tab.scene">Scenografie e concept</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="panel-tavole" id="tab-tavole" data-panel="tavole" data-i18n="tab.tavole">Tavole tecniche</button>
+  </div>
+
+  <div class="panel" id="panel-interni" role="tabpanel" aria-labelledby="tab-interni">
+
+    <article class="case" data-case="c1">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c1.t">Residenza privata</h3>
+        <p class="case-meta reveal" data-i18n="c1.m">Render di interni · Modellazione 3D, rendering, post-produzione</p>
+        <p class="reveal" data-i18n="c1.p1">Zona giorno, cucina e camere di una residenza: rovere caldo, listelli, tessuti chiari e una luce naturale che entra di lato e scalda le superfici. Ogni vista è calibrata per mostrare come si vivrà lo spazio.</p>
+        
+        
+      </div>
+      <div class="mosaic reveal">
+        <button class="ph s6" data-src="assets/web/res-living-nicchia.jpg"><img src="assets/web/res-living-nicchia.jpg" alt="Soggiorno con libreria, nicchia e tende in lino" width="1672" height="941" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-cucina-tavolo.jpg"><img src="assets/web/res-cucina-tavolo.jpg" alt="Cucina con tavolo e sedie bianche" width="1672" height="941" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-sala-listelli.jpg"><img src="assets/web/res-sala-listelli.jpg" alt="Sala da pranzo con parete a listelli" width="1672" height="941" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-camera-testata.jpg"><img src="assets/web/res-camera-testata.jpg" alt="Camera con testata imbottita color terracotta" width="1555" height="1011" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-camera-cotto.jpg"><img src="assets/web/res-camera-cotto.jpg" alt="Camera con armadi e cassettiera in cotto" width="1555" height="1011" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-camera-lampadario.jpg"><img src="assets/web/res-camera-lampadario.jpg" alt="Camera con carta da parati e lampadario di vetro" width="1606" height="979" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-cucina-bianca.jpg"><img src="assets/web/res-cucina-bianca.jpg" alt="Cucina bianca con piano in marmo" width="1672" height="941" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-ingresso.jpg"><img src="assets/web/res-ingresso.jpg" alt="Ingresso con specchio e mobile" width="1672" height="941" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-spogliatoio.jpg"><img src="assets/web/res-spogliatoio.jpg" alt="Spogliatoio con toeletta" width="1672" height="941" loading="lazy"></button>
+      </div>
+    </article>
+
+    <article class="case" data-case="c2">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c2.t">Cucina con isola in pietra</h3>
+        <p class="case-meta reveal" data-i18n="c2.m">Render di interni · Luce, materia, volume</p>
+        <p class="reveal" data-i18n="c2.p1">Un'isola in pietra a rilievo su basi in legno caldo, con una luce radente che ne fa emergere la grana. Il progetto lavora sul contrasto tra superficie ruvida, venature del legno e ombre morbide.</p>
+        
+        
+      </div>
+      <div class="mosaic reveal">
+        <button class="ph s6" data-src="assets/web/res-isola-pietra.jpg"><img src="assets/web/res-isola-pietra.jpg" alt="Cucina con isola in pietra a rilievo e legno" width="1610" height="977" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-isola-legno.jpg"><img src="assets/web/res-isola-legno.jpg" alt="Isola in pietra vista frontalmente" width="1620" height="971" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/res-lavabo-listelli.jpg"><img src="assets/web/res-lavabo-listelli.jpg" alt="Lavello in pietra e parete a listelli" width="1606" height="979" loading="lazy"></button>
+        <button class="ph s6" data-src="assets/web/res-vasca-pietra.jpg"><img src="assets/web/res-vasca-pietra.jpg" alt="Dettaglio del lavello in pietra" width="1606" height="979" loading="lazy"></button>
+      </div>
+    </article>
+
+    <article class="case" data-case="c3">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c3.t">Jil Sander, retail space</h3>
+        <p class="case-meta reveal" data-i18n="c3.m">Milano · Spazio retail · Studio di una boutique</p>
+        <p class="reveal" data-i18n="c3.p1">Un ambiente retail definito da continuità, tattilità dei materiali e fluidità spaziale. Geometrie curve guidano il movimento attraverso una sequenza di atmosfere intime.</p>
+        <p class="reveal" data-i18n="c3.p2">Lo spazio non impone, guida in silenzio. La materia dà forma alla percezione, la luce rivela texture, proporzioni e profondità. Ogni elemento è ridotto alla sua presenza essenziale, in dialogo con l'identità di Jil Sander.</p>
+        <p class="case-mats reveal" data-i18n="c3.k">Travertino · Pietra naturale a listelli · Intonaco materico · Acciaio satinato · Vetro trasparente · Velluto verde oliva</p>
+        
+      </div>
+      <div class="mosaic reveal">
+        <button class="ph s6" data-src="assets/web/js-finale.jpg"><img src="assets/web/js-finale.jpg" alt="Retail: panca ad arco, mensole e abiti" width="1343" height="941" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/js-atmosfera.jpg"><img src="assets/web/js-atmosfera.jpg" alt="Atmosfera con lampada a sospensione e sedia" width="739" height="941" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/js-listelli.jpg"><img src="assets/web/js-listelli.jpg" alt="Parete a listelli di pietra e vetrina" width="1406" height="899" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/js-mensole.jpg"><img src="assets/web/js-mensole.jpg" alt="Mensole espositive con profumi" width="1672" height="941" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/js-vetrina.jpg"><img src="assets/web/js-vetrina.jpg" alt="Appendiabiti davanti alle grandi vetrate" width="1269" height="941" loading="lazy"></button>
+      </div>
+    </article>
+  </div>
+
+  <div class="panel" id="panel-prodotti" role="tabpanel" aria-labelledby="tab-prodotti" hidden>
+
+    <article class="case" data-case="c4">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c4.t">THROUGH</h3>
+        <p class="case-meta reveal" data-i18n="c4.m">Collezione di arredi · Tesi di laurea triennale, Decorazione e Interior Design, LABA Brescia</p>
+        <p class="reveal" data-i18n="c4.p1">THROUGH indaga la trasparenza come condizione percettiva e spaziale, non solo come qualità estetica. La ricerca nasce dallo studio del movimento Light and Space e dal lavoro di Sabine Marcelis, riferimenti fondamentali per capire come la luce possa definire la materia.</p>
+        <p class="reveal" data-i18n="c4.p2">Attraverso materiali traslucidi, riflettenti e fumé, la collezione esplora diffusione della luce, profondità e presenza visiva: resina, travertino, acciaio corten e superfici riflettenti creano contrasti tra opacità e luminosità, morbidezza e densità. GENESIS ne è l'origine luminosa, una lampada da tavolo concepita come un volume pieno attraversato dalla luce.</p>
+        <p class="case-mats reveal" data-i18n="c4.k">Resina traslucida · Resina fumé · Travertino · Acciaio corten · Resina riflettente · Metallo verniciato</p>
+        
+      </div>
+      <div class="mosaic reveal">
+        <button class="ph s6" data-src="assets/web/th-genesis.jpg"><img src="assets/web/th-genesis.jpg" alt="Tavola di GENESIS con ricerca e materiali" width="1669" height="1179" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-filtred.jpg"><img src="assets/web/th-filtred.jpg" alt="Filtred, tavolino basso" width="1004" height="986" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-lowkey.jpg"><img src="assets/web/th-lowkey.jpg" alt="Low.Key, tavolo" width="996" height="996" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-highkey.jpg"><img src="assets/web/th-highkey.jpg" alt="High.Key, tavolo" width="1004" height="1000" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-halo.jpg"><img src="assets/web/th-halo.jpg" alt="Halo, lampada a sospensione" width="996" height="996" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-bentin.jpg"><img src="assets/web/th-bentin.jpg" alt="Bent.In, sedia" width="996" height="996" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-stillsit.jpg"><img src="assets/web/th-stillsit.jpg" alt="Still.Sit, poltrona" width="996" height="996" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-plinth.jpg"><img src="assets/web/th-plinth.jpg" alt="Plinth, tavolino e piedistallo" width="1004" height="996" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/th-qb.jpg"><img src="assets/web/th-qb.jpg" alt="QB, pouf rigido" width="996" height="1004" loading="lazy"></button>
+      </div>
+    </article>
+
+    <article class="case" data-case="c5">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c5.t">Catmouflage</h3>
+        <p class="case-meta reveal" data-i18n="c5.m">Design di prodotto · Pouf-contenitore per il gatto</p>
+        <p class="reveal" data-i18n="c5.p1">Catmouflage è un pouf-contenitore pensato per adattarsi al tuo gatto e alla tua casa. Chiuso è un pouf raffinato, compatto e senza interruzioni. Aperto, il coperchio rivela un sacco di eco-pelliccia morbido che avvolge il gatto, offrendogli uno spazio sicuro e nascosto.</p>
+        <p class="reveal" data-i18n="c5.p2">Il coperchio, grazie ai piedini, diventa un mini pouf. Trasformabile, sfoderabile e personalizzabile, rispetta la natura del gatto e semplifica la vita quotidiana in casa.</p>
+        <p class="case-mats reveal" data-i18n="c5.k">Adattare · Trasformare · Far scomparire</p>
+        
+      </div>
+      <div class="mosaic reveal">
+        <button class="ph p" data-src="assets/web/cm-gatto.jpg"><img src="assets/web/cm-gatto.jpg" alt="Gatto seduto su Catmouflage vicino alla finestra" width="984" height="1345" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/cm-sacco.jpg"><img src="assets/web/cm-sacco.jpg" alt="Il sacco di eco-pelliccia che avvolge il gatto" width="1101" height="1446" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/cm-pouf.jpg"><img src="assets/web/cm-pouf.jpg" alt="Catmouflage chiuso come pouf" width="1197" height="1442" loading="lazy"></button>
+        <button class="ph s6" data-src="assets/web/cm-coppia.jpg"><img src="assets/web/cm-coppia.jpg" alt="Pouf e coperchio con piedini in legno" width="1003" height="361" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/tav-catmouflage-1.jpg"><img src="assets/web/tav-catmouflage-1.jpg" alt="Tavola di presentazione di Catmouflage" width="1590" height="1126" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/tav-catmouflage-2.jpg"><img src="assets/web/tav-catmouflage-2.jpg" alt="Tavola con dettagli e personalizzazioni" width="1639" height="1160" loading="lazy"></button>
+      </div>
+    </article>
+  </div>
+
+  <div class="panel" id="panel-scene" role="tabpanel" aria-labelledby="tab-scene" hidden>
+
+    <article class="case" data-case="c6">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c6.t">Madeleine Vionnet Museum</h3>
+        <p class="case-meta reveal" data-i18n="c6.m">Parigi · Museo · Concept di allestimento</p>
+        <p class="reveal" data-i18n="c6.p1">Il progetto traduce in spazio il linguaggio senza tempo di Madeleine Vionnet. Ispirato al panneggio classico, alle silhouette greche e alle tecniche di costruzione fluide, il museo trasforma la moda in architettura.</p>
+        <p class="reveal" data-i18n="c6.p2">Marmo, riflessi dorati e geometrie curve compongono un tempio contemporaneo: una sequenza di ambienti accompagna i visitatori in un'esperienza elevata e contemplativa, tra piedistalli, archi, specchi e luce come scenografia.</p>
+        <p class="case-mats reveal" data-i18n="c6.k">Marmo · Resina · Riflessi satinati · Metallo dorato · Tessuto caldo · Luce soffusa</p>
+        
+      </div>
+      <div class="mosaic reveal">
+        <button class="ph s6" data-src="assets/web/vi-tempio.jpg"><img src="assets/web/vi-tempio.jpg" alt="Tre abiti scultorei su piedistalli, tra tende e specchi" width="1800" height="1500" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/vi-galleria.jpg"><img src="assets/web/vi-galleria.jpg" alt="Galleria di archi con abiti esposti" width="1486" height="1600" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/vi-nicchia.jpg"><img src="assets/web/vi-nicchia.jpg" alt="Abito in una nicchia ad arco" width="605" height="713" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/vi-specchi.jpg"><img src="assets/web/vi-specchi.jpg" alt="Abiti e specchi circolari illuminati" width="896" height="1024" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/vi-sequenza.jpg"><img src="assets/web/vi-sequenza.jpg" alt="Sequenza di ambienti con lucernario" width="605" height="676" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/tav-vionnet-1.jpg"><img src="assets/web/tav-vionnet-1.jpg" alt="Tavola di studio del museo" width="1641" height="1161" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/tav-vionnet-2.jpg"><img src="assets/web/tav-vionnet-2.jpg" alt="Tavola con dettagli e materiali" width="1718" height="1134" loading="lazy"></button>
+      </div>
+    </article>
+
+    <article class="case" data-case="c7">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c7.t">Una scena, tre atmosfere</h3>
+        <p class="case-meta reveal" data-i18n="c7.m">Setting per THROUGH · Concept di scenografia</p>
+        <p class="reveal" data-i18n="c7.p1">Il setting è concepito come un unico spazio continuo, diviso simbolicamente in tre aree connesse: il Lounge, per la conversazione e la contemplazione; lo Stage, fulcro di un'esperienza curata; la Dining Hall, luogo di condivisione.</p>
+        <p class="reveal" data-i18n="c7.p2">Una scenografia neutra ed essenziale lascia parlare materiali, proporzioni e presenza degli oggetti. L'equilibrio tra architettura, luce e materia crea un dialogo silenzioso che si adatta a scenari e contesti diversi.</p>
+        
+        
+      </div>
+      <div class="mosaic reveal">
+        <button class="ph s6" data-src="assets/web/ts-setting.jpg"><img src="assets/web/ts-setting.jpg" alt="Vista d'insieme del setting con tavolo e arazzo" width="1636" height="1158" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/ts-lounge.jpg"><img src="assets/web/ts-lounge.jpg" alt="Il Lounge con lampada e tavolino" width="798" height="1728" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/ts-stage.jpg"><img src="assets/web/ts-stage.jpg" alt="Lo Stage con tavolo in rame e pietra" width="798" height="1728" loading="lazy"></button>
+        <button class="ph p" data-src="assets/web/ts-parete.jpg"><img src="assets/web/ts-parete.jpg" alt="Parete scultorea in fibra" width="798" height="1728" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/ts-dining.jpg"><img src="assets/web/ts-dining.jpg" alt="La Dining Hall" width="764" height="688" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/ts-tavolo-vetro.jpg"><img src="assets/web/ts-tavolo-vetro.jpg" alt="Tavolo con piano in vetro e pietra" width="768" height="579" loading="lazy"></button>
+        <button class="ph s3" data-src="assets/web/ts-halo-parete.jpg"><img src="assets/web/ts-halo-parete.jpg" alt="Halo davanti all'arazzo" width="764" height="607" loading="lazy"></button>
+      </div>
+    </article>
+  </div>
+
+  <div class="panel" id="panel-tavole" role="tabpanel" aria-labelledby="tab-tavole" hidden>
+    <article class="case case-boards" data-case="c8">
+      <div class="case-text">
+        <h3 class="case-title reveal" data-i18n="c8.t">Tavole e disegni tecnici</h3>
+        <p class="case-meta reveal" data-i18n="c8.m">Disegno tecnico · Presentazione di progetto</p>
+        <p class="reveal" data-i18n="c8.p1">Tavole, dwg, assonometrie, sezioni ed esplosi: il lato rigoroso del progetto. Dal prospetto di un armadio su misura all'abaco dei materiali, dalle tavole di concept alle impaginazioni per la presentazione.</p>
+        <p class="case-mats reveal" data-i18n="c8.k">Tavole · DWG · Assonometrie · Sezioni · Esplosi · Abachi dei materiali</p>
+      </div>
+      <div class="boards reveal">
+        <button class="ph b" data-src="assets/web/tav-armadio.jpg"><img src="assets/web/tav-armadio.jpg" alt="Prospetto e interno di un armadio su misura" width="768" height="1376" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/tav-moodboard.jpg"><img src="assets/web/tav-moodboard.jpg" alt="Moodboard di materiali e texture" width="1116" height="2000" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/cucina-verde.jpg"><img src="assets/web/cucina-verde.jpg" alt="Prospetto di una cucina verde salvia" width="1757" height="786" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/tav-jilsander-1.jpg"><img src="assets/web/tav-jilsander-1.jpg" alt="Tavola del progetto Jil Sander" width="1492" height="1054" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/tav-jilsander-2.jpg"><img src="assets/web/tav-jilsander-2.jpg" alt="Tavola di dettagli e materiali Jil Sander" width="1492" height="1034" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/tav-setting.jpg"><img src="assets/web/tav-setting.jpg" alt="Tavola del setting con piante e studi" width="1624" height="1150" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/tav-vionnet-1.jpg"><img src="assets/web/tav-vionnet-1.jpg" alt="Tavola del museo Vionnet" width="1641" height="1161" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/tav-accademia.jpg"><img src="assets/web/tav-accademia.jpg" alt="Tavola di una installazione grafica per l'accademia" width="1513" height="1024" loading="lazy"></button>
+        <button class="ph b" data-src="assets/web/materiali.jpg"><img src="assets/web/materiali.jpg" alt="Abaco dei materiali per una cucina" width="917" height="668" loading="lazy"></button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SERVIZI -->
+<section class="band band-oak services" id="servizi">
+  <h2 class="section-title reveal" data-i18n="svc.title">Servizi</h2>
+  <ul class="svc-list">
+    <li class="svc reveal"><h3 data-i18n="s1.t">Render realistici per interni</h3><p data-i18n="s1.d">Immagini per mostrare come sarà un ambiente arredato.</p></li>
+    <li class="svc reveal"><h3 data-i18n="s2.t">Render realistici per esterni</h3><p data-i18n="s2.d">Immagini per facciate, giardini e costruzioni.</p></li>
+    <li class="svc reveal"><h3 data-i18n="s3.t">Render di prodotto e arredamento</h3><p data-i18n="s3.d">Immagini per presentare mobili e oggetti in modo professionale.</p></li>
+    <li class="svc reveal"><h3 data-i18n="s4.t">Fotoinserimenti su foto reali</h3><p data-i18n="s4.d">Inserisco il progetto dentro fotografie reali.</p></li>
+    <li class="svc reveal"><h3 data-i18n="s5.t">Ritocco e miglioramento immagini</h3><p data-i18n="s5.d">Correzione di luci, colori e dettagli finali.</p></li>
+    <li class="svc reveal"><h3 data-i18n="s6.t">Modellazione 3D</h3><p data-i18n="s6.d">Creo modelli 3D da disegno o da idea.</p></li>
+    <li class="svc reveal"><h3 data-i18n="s7.t">Presentazioni di progetto</h3><p data-i18n="s7.d">Impaginazione e immagini ordinate per mostrare meglio il lavoro.</p></li>
+    <li class="svc reveal"><h3 data-i18n="s8.t">Creazione di 2D</h3><p data-i18n="s8.d">Tavole, dwg, disegni tecnici, assonometrie, sezioni, esplosi.</p></li>
+  </ul>
+</section>
+
+<!-- CHI SONO -->
+<section class="band band-travertine about" id="chi-sono">
+  <div class="about-pic reveal" data-parallax-soft>
+    <img src="assets/web/js-atmosfera.jpg" alt="Atmosfera del retail Jil Sander: lampada, sedia e tappeto verde oliva" width="739" height="941" loading="lazy">
+  </div>
+  <div class="about-text">
+    <h2 class="section-title reveal" data-i18n="about.title">Spazi, materia e luce</h2>
+    <p class="about-lead reveal" data-i18n="about.p1">Sono Dennis Grassi, interior designer e 3D artist freelance. Progetto e racconto gli spazi attraverso materia, luce e atmosfera, dal disegno fino all'immagine finale.</p>
+    <p class="reveal" data-i18n="about.p2">Il mio approccio parte dalla ricerca: osservo come la luce definisce un materiale, come un percorso guida le persone, come un oggetto abita uno spazio. Poi lo costruisco in 3D, con la stessa cura con cui lo disegnerei dal vero.</p>
+    <p class="reveal" data-i18n="about.p3">Lavoro con architetti, studi di interni, aziende di arredo e privati: ricevo un disegno, una foto o un'idea e restituisco immagini pronte per presentare, vendere o decidere.</p>
+    <div class="edu">
+      <article class="edu-card edu-iuav reveal">
+        <h3 data-i18n="edu1.t">Università Iuav di Venezia</h3>
+        <p class="edu-what" data-i18n="edu1.d">Laurea Magistrale in Design del prodotto, della comunicazione e degli interni, indirizzo Interni</p>
+        <p class="edu-when" data-i18n="edu1.w">In corso</p>
+      </article>
+      <article class="edu-card edu-laba reveal">
+        <h3 data-i18n="edu2.t">Accademia di Belle Arti LABA, Brescia</h3>
+        <p class="edu-what" data-i18n="edu2.d">Decorazione e Interior Design. Tesi: THROUGH, la trasparenza come materia viva</p>
+        <p class="edu-when" data-i18n="edu2.w">Triennio concluso</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section class="band band-orange contact" id="contatti">
+  <h2 class="section-title reveal" data-i18n="contact.title">Hai un progetto da mostrare?</h2>
+  <a class="contact-big reveal" href="mailto:grassidennis23@gmail.com?subject=Richiesta%20di%20collaborazione&body=Ciao%20Dennis%2C%0A%0A">grassidennis23@gmail.com</a>
+  <a class="contact-tel reveal" href="tel:+393807470001">+39 380 7470001</a>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot-name" aria-hidden="true">DG Design</p>
+  <p class="foot-line" data-i18n="foot.line">Dennis Grassi, interior designer e 3D artist.</p>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Immagine ingrandita" hidden>
+  <button class="lb-close" data-i18n="lb.close">Chiudi</button>
+  <button class="lb-prev" data-i18n="lb.prev">Precedente</button>
+  <figure id="lb-fig"><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-next" data-i18n="lb.next">Successiva</button>
+</div>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
